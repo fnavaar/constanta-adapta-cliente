@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "adapta-cliente-handoff/v1",
+  "phase": 1,
+  "versions": {
+    "package": "nao-detectada",
+    "adapta": "1.0.0",
+    "adaptaCliente": "1.0.0"
+  },
+  "generatedAt": "2026-08-25T16:54:23.793Z",
+  "files": [
+    {"path":"04_fase-atual/fase.md","sha256":"4f009a4648785bcd724e8dbdbe43741faff8c98dcc2680794c50c58887f8acf9","classification":"fase-atual"},
+    {"path":"04_fase-atual/specs/spec-1-001-contrato-importacao.md","sha256":"c520e1d3b90944772524b50bf901739a185fae2b1beef3162b8bb6d585dcc4aa","classification":"spec-fase-atual"},
+    {"path":"04_fase-atual/specs/spec-1-002-visao-financeira.md","sha256":"5fcb31abb3ec14f93ff1b51751ad96e53fcb3a699eb21bdb6851769a036b4878","classification":"spec-fase-atual"},
+    {"path":"04_fase-atual/specs/spec-1-003-permissoes.md","sha256":"924610a45df9bb292d5dfcf6aa223be132194963b861671ad86251b99f0c8c4d","classification":"spec-fase-atual"}
+  ]
+}
