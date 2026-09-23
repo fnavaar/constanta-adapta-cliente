@@ -7,23 +7,20 @@
 
 - **Tasks da Fase 1:** 1 de 7 concluída (**14,3%**).
 - **Concluída:** F1-T01 — pacote CT2 e Budget V5 aprovado no preview.
-- **Ativa:** nenhuma; fechamento de F1-T01 confirmado.
-- **Próximo trabalho:** analisar a próxima task elegível, sem iniciar implementação nesta conclusão.
+- **Task em análise/bloqueada:** F1-T07 — aprovar mapeamento/reconciliação para a visão Realizado versus Budget.
+- **Layout atual:** mostra reconciliação CT2; o Budget é carregado apenas com nome/hash e ainda não alimenta uma tabela por conta.
 - **Produção:** não publicada; o preview do projeto Skip 52774 está na versão 0.0.13.
 
-## Evidências F1-T01
+## Diagnóstico da visão Realizado × Budget
 
-- CT2 de junho/2026 carregada e validada no preview.
-- Moeda-base `01`: 17.409 linhas, 206/206 documentos balanceados, 0 divergências, diferença R$ 0,00.
-- Moeda `02`: 750 registros segregados e auditáveis, fora da soma em reais.
-- Dashboard: escala R$ mil com 2 casas decimais.
-- Budget V5 carregado no fluxo de fontes.
-- QA da versão 0.0.13: setup, análise estática, build, integrações e teste passaram.
-- Teste humano aprovado por Rodolfo em 2026-09-23: “Teste humano F1-T01: funcionou; pode concluir a task e seguir para o DRE Realizado versus Budget”.
-- Origem contábil e Proteus não foram alterados.
+- CT2 moeda-base `01`, junho/2026: 17.409 linhas, 87 contas, 73 centros de custo e 1.640 partidas sem centro.
+- Budget V5/2026, junho: 1.161 linhas, 458 `APROVADO`, 84 contas e 42 centros de custo.
+- A aba analítica do Budget não possui filial explícita; o vínculo com Filial 01 — Atibaia ainda precisa ser aprovado.
+- Cobertura: 473 chaves conta+centro comuns, 424 somente no realizado e 351 somente no budget.
+- A CT2 fecha em R$ 0,00 na moeda-base, mas isso é reconciliação de lançamentos e não total de despesas DRE.
 
-## Bloqueios e limites
+## Bloqueios e próximos gates
 
-- F1-T02..F1-T07 permanecem bloqueadas conforme pré-condições da fase.
-- Não iniciar o DRE Realizado versus Budget na mesma rodada do fechamento; requer nova análise/autorização de task.
+- F1-T07 bloqueada até aprovação do mapeamento conta→linha DRE, natureza/sinal/agregação e vínculo Budget V5→Filial 01 — Atibaia.
+- F1-T04 (atualização do layout) não será implementada antes desses gates.
 - Não ativar comparativo mensal/loop sem fonte, métrica, cadência, permissões, recuperação e responsável aprovados.
