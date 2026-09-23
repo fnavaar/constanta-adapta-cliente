@@ -6,8 +6,8 @@
 - etapa: bloqueada
 - autorizacao_implementacao: ausente
 - teste_humano: pendente
-- verificacao_automatica: falhou — de/para CT2 físico versus cabeçalhos recebidos foi confirmado por referência pública do dicionário Protheus; a amostra tem 18.159 linhas válidas em filial 01 (01/06/2026 a 30/06/2026) e UUIDs únicos, mas `Seq Chv Unic` está vazio, há uma linha vazia e existem três cabeçalhos `REPLICA` sem nome físico resolvido. O cliente confirmou V5/2026 como versão oficial do budget, junho/2026 somente como amostra e aprovou a regra de sinais proposta. A chave do budget e o saldo inicial/balancete anterior ficaram explicitamente para depois.
+- verificacao_automatica: falhou — CT2 validada em leitura: 18.159 linhas válidas, filial 01, competências de 01/06/2026 a 30/06/2026, 293 contas com movimento e UUIDs únicos. Pela regra de sinais aprovada, o movimento técnico de junho soma débitos de R$ 138.064.479,82 e créditos de R$ 138.048.718,63, diferença de R$ 15.761,19 que exige reconciliação antes de publicação. A CT2 não contém saldo final de 31/05/2026; portanto não permite fabricar um saldo de abertura real. Chave operacional proposta para o budget: versão | filial/escopo | competência | conta ou linha DRE, mas ainda precisa ser confirmada para o arquivo V5/2026.
 - aprendizado: pendente
-- ultima_acao: registro das respostas do contrato; nenhum arquivo financeiro foi copiado, publicado ou importado no repositório e nenhum comparativo foi implementado.
-- proxima_acao: obter a chave do budget e a referência de saldo inicial/balancete anterior para a reconciliação.
-- atualizado_em: 2026-09-23T12:03:16-03:00
+- ultima_acao: explicação da chave do budget e apuração somente leitura do movimento líquido da CT2; nenhum arquivo financeiro foi copiado, publicado ou importado no repositório.
+- proxima_acao: confirmar a chave operacional do budget e fornecer o saldo final de 31/05/2026 (ou balancete anterior) para derivar o saldo inicial de junho.
+- atualizado_em: 2026-09-23T12:06:18-03:00
